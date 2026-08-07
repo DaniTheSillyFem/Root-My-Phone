@@ -137,10 +137,10 @@ class PayloadRepository(private val context: Context) {
 
     companion object {
         private const val COMMIT_API_URL =
-            "https://api.github.com/repos/UzBCoder0221/Root-My-Galaxy-Payloads/git/ref/heads/agent/a34x-A346EXXSDEZB6-port"
+            "https://api.github.com/repos/DaniTheSillyFem/Root-My-Galaxy-Payloads/git/ref/heads/main"
         private const val RAW_REPOSITORY =
-            "https://raw.githubusercontent.com/UzBCoder0221/Root-My-Galaxy-Payloads"
-        private val ALLOWED_RAW_PREFIX = "$RAW_REPOSITORY/agent/a34x-A346EXXSDEZB6-port/"
+            "https://raw.githubusercontent.com/DaniTheSillyFem/Root-My-Galaxy-Payloads"
+        private val ALLOWED_RAW_PREFIX = "$RAW_REPOSITORY/main/"
         private const val MAX_COMMIT_RESPONSE_BYTES = 16 * 1024
         private const val MAX_MANIFEST_BYTES = 256 * 1024
     }
