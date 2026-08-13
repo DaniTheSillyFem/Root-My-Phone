@@ -1,17 +1,18 @@
-# Root My Galaxy
+# Root My Phone
 
 <img width="108" height="108" alt="sprout_icon_108" src="https://github.com/user-attachments/assets/2ba0e360-0876-489c-b256-f75df7589785" />
 
 
-Root My Galaxy is a one-click installer for explicitly
+Forked from [Root My Galaxy](https://github.com/BuSung-dev/Root-My-Galaxy), Root My Phone is a one-click installer for explicitly
 supported Samsung model and kernel combinations. The application itself is kept separate
 from device offsets, native exploit payloads, and KernelSU build artifacts.
 
+(btw this adds A346E)
 
-[Latest release](https://github.com/BuSung-dev/Root-My-Galaxy/releases)
+[Latest release](https://github.com/DaniTheSillyFem/Root-My-Phone/releases)
 
 The device feed and native payloads are maintained in
-[Root-My-Galaxy-Payloads](https://github.com/BuSung-dev/Root-My-Galaxy-Payloads).
+[Root-My-Galaxy-Payloads](https://github.com/DaniTheSillyFem/Root-My-Galaxy-Payloads).
 
 ## Application
 
