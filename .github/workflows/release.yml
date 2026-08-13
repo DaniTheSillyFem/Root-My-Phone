@@ -151,18 +151,9 @@ jobs:
           set -euo pipefail
 
           {
-            echo "# Release $TAG_NAME"
+            echo "Changes:"
             echo
-            echo "Version: $VERSION_NAME"
-            echo "Commit: $TAG_COMMIT"
-            echo
-            if [ -n "$PREVIOUS_TAG" ]; then
-              echo "Changes since $PREVIOUS_TAG:"
-              echo
-              git log --format='- %s' "$PREVIOUS_TAG..$TAG_NAME"
-            else
-              echo "First tagged release."
-            fi
+            git log --format='- %s' "$PREVIOUS_TAG..$TAG_NAME"
           } > release-notes.md
 
       - name: Create or update GitHub release
@@ -175,13 +166,13 @@ jobs:
 
           if gh release view "$TAG_NAME" >/dev/null 2>&1; then
             gh release edit "$TAG_NAME" \
-              --title "Release $TAG_NAME" \
+              --title "Root My Phone $TAG_NAME" \
               --notes-file release-notes.md \
               --latest
             gh release upload "$TAG_NAME" app/build/outputs/apk/debug/*.apk --clobber
           else
             gh release create "$TAG_NAME" app/build/outputs/apk/debug/*.apk \
-              --title "Release $TAG_NAME" \
+              --title "Root My Phone $TAG_NAME" \
               --notes-file release-notes.md \
               --latest
           fi
